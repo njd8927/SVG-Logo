@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shapes = require('./shapes.js');
-
+const {Circle, Triangle, Square} = require('./lib/shapes.js');
 
 
 
@@ -9,29 +8,36 @@ function svgContent (){
 inquirer.prompt ([
     {
         type: "input",
-        name: "logo text",
+        name: "logoText",
         message: "Please enter text for the logo (max of 3 characters)",
     },
     {
         type: "input",
-        name: "logo text color",
+        name: "logoColor",
         message: "Please enter a text color for the logo",
     },
     {
         type: "list",
-        name: "shape choice",
+        name: "shapeChoice",
         message: "Please choose the shape of your logo from the list below",
         choices: ["circle", "triangle", "square"],
     },
     {
         type: "input",
-        name: "shape color",
+        name: "shapeColor",
         message: "Please enter a color for the logo shape",
     }
 ]). then((answersObj) => {
     console.log("Generated logo.svg!");
-    const data = answersObj;
-    writeToFile('logo.svg', data);
+    let newShape;
+    if(answersObj.shapeChoice === "circle") {
+        newShape = new Circle(answersObj.logoText, answersObj.logoColor, answersObj.shapeColor)
+    } else if (answersObj.shapeChoice === "triangle") {
+        newShape = new Triangle(answersObj.logoText, answersObj.logoColor, answersObj.shapeColor)
+    } else {
+        newShape = new Square(answersObj.logoText, answersObj.logoColor, answersObj.shapeColor)
+    }
+    writeToFile('logo.svg', newShape.render());
 })};
 
 
