@@ -25,6 +25,6 @@ describe('triangle', () => {
         const userShape = new triangle();
         shape.setColor("blue");
         const shape = userShape.render();
-        expect(shape).toBe(`<polygon points="150,25 250,150 50,150" fill="blue" `);
+        expect(shape).toEqual(`<polygon points="150,25 250,150 50,150" fill="blue" `);
     });
 });
