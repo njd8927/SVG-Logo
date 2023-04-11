@@ -20,17 +20,17 @@ https://opensource.org/licenses/MIT
 ### 6. [Questions](#questions)
 
 ## Description
-### This project is intended to provide the user with a professional README generator to use for their own projects' README file.
+### This project is intended to provide the user with an SVG Logo based on the data they inputed.
 
 ## Installation
-### For installation instructions, please see the project github repository: https://www.github.com/njd8927/ReadMe_Generator
+### For installation instructions, please see the project github repository: https://github.com/njd8927/SVG-Logo
 
 ## Usage
-### To initialize application, type node index.js in command line and answer the prompts to have your README file generated.
+### To initialize application, type npm start in your command line and answer the prompts to have your customized SVG Logo generated.
 
 ## Contributions
 ### This project was developed with assistance from JD Tadlock, Armando Osario, Andres Long, https://www.stackoverflow.com and MDN Web Docs.
-### To contribute to this project please see my github repository: https://www.github.com/njd8927/ReadMe_Generator
+### To contribute to this project please see my github repository: https://github.com/njd8927/SVG-Logo
 
 ## Tests
 ### Tested with Jest.
@@ -42,4 +42,4 @@ GitHub: github.com/njd8927
 
 Email: nicholasz8687@gmail.com
 
-Link to Walkthrough Video: https://drive.google.com/file/d/1OOAGHYociZB17rdAnu0Hwno-diWydZl0/view
+Link to Walkthrough Video: 
