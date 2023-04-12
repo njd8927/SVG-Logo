@@ -1,14 +1,17 @@
-const inquirer = require('inquirer');
 // pulls in inquirer package
-const fs = require('fs');
+const inquirer = require('inquirer');
+
 // pulls in file system package
-const {Circle, Triangle, Square} = require('./lib/shapes.js');
+const fs = require('fs');
+
 // pulls in and deconstructs the 3 shape classes from shapes.js
+const {Circle, Triangle, Square} = require('./lib/shapes.js');
 
 
 
+
+ // function to generate SVG logo. inquirer used to obtain data from user via prompts
 function svgContent (){
-    // function to generate SVG logo. inquirer used to obtain data from user via prompts
 inquirer.prompt ([
     {
         type: "input",
