@@ -38,7 +38,7 @@ https://opensource.org/licenses/MIT
 ### For additional testing instructions, please contact me via github or email provided below
 
 ## Questions
-GitHub: github.com/njd8927
+GitHub: https://www.github.com/njd8927
 
 Email: nicholasz8687@gmail.com
 
